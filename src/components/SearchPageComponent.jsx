@@ -11,12 +11,12 @@ class SearchPageComponent extends Component {
             hots: []
         }
         this.handleSearchChange = this.handleSearchChange.bind(this);
-
+        this.searchKeyWord( props.match.params.search)
         this.getHotBoard();
         this.getPopularTag();
     }
 
-
+   
     handleSearchChange = (event) => {
         this.setState({ search: event.target.value });
     }
@@ -159,8 +159,8 @@ class SearchPageComponent extends Component {
 
                                     </div>
                                     <div className="department-content text-center">
-                                        <h4 className="department-title">
-                                            <a className="hot" onClick={() => this.AllHotBoard()}>  HOT 게시물   </a>
+                                        <h4 className="department-title" onClick={()=>this.AllHotBoard()} >
+                                           HOT 게시물
                                         </h4>
                                         <table className="table-board">
                                             <tbody>

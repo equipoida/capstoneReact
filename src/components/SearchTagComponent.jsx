@@ -24,7 +24,9 @@ class SearchTagComponent extends Component {
             });
         })
     }
-
+    AllHotBoard() {
+        this.props.history.push(`/Allhotboard`);
+    }
     handleSearchChange = (event) => {
         this.setState({ tag: event.target.value });
     }
@@ -162,7 +164,7 @@ class SearchTagComponent extends Component {
 
                                     </div>
                                     <div className="department-content text-center">
-                                        <h4 className="department-title">
+                                    <h4 className="department-title" onClick={()=>this.AllHotBoard()} >
                                             HOT 게시물
                                             </h4>
                                         <table className="table-board">
