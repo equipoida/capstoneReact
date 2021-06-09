@@ -139,8 +139,12 @@ class ReadBoardComponent extends Component {
             board_like: this.state.board.board_like + 1,
             category: this.state.board.category,
             id: this.state.board.id,
-            filepath: this.state.board.filepath
-
+            filepath: this.state.board.filepath,
+            tag1:this.state.board.tag1,
+            tag2:this.state.board.tag2,
+            tag3:this.state.board.tag3,
+            tag4:this.state.board.tag4,
+            tag5:this.state.board.tag5,
         };
 
         let boardliketo = {
